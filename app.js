@@ -6,9 +6,16 @@
 
 //let solo puede ser utilizadas a partir de su definicion en el bloque de codigo.
 let a = 10,
-    b = 10,
-    c = 10,
-    d = 10,
+    b = 20,
+    c = 'Hola ',
+    d = 'Socio',
     x = a + b;
 
-console.log( x );
+const saludo = c + d;
+
+//console.log('%c Mis variables', 'color:blue; font-weight: bold');
+//console.warn({b});
+//console.error({c});
+//console.info({x});
+
+//console.table({a,b,c,d,x});
