@@ -1,3 +1,5 @@
+//alert('Hola desde app.js');
+
 // console.log('Hola mundo desde js');
 
 // c = 32 no se puede asignar un nuevo valor a una constante
@@ -18,4 +20,8 @@ const saludo = c + d;
 //console.error({c});
 //console.info({x});
 
+c = 'Hola de nuevo';
+
 //console.table({a,b,c,d,x});
+
+var miNombre = 'Terrance';
