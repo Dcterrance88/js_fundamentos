@@ -1,3 +1,4 @@
+console.log(miNuevoNombe);
 //alert('Hola desde app.js');
 
 // console.log('Hola mundo desde js');
@@ -23,5 +24,7 @@ const saludo = c + d;
 c = 'Hola de nuevo';
 
 //console.table({a,b,c,d,x});
+let outerwidth = 1000000;
+let outerHeight = 600;
 
-var miNombre = 'Terrance';
+let miNuevoNombe = 'carlos';
