@@ -28,7 +28,7 @@ console.log(ultimoElementoEliminado);
 //el segundo el numero de elementos que eliminara a partir de la posicion indicada
 //este devuelve un array con los elementos eliminados
 let posicion = 1;
-let cantidadElementos = 2 
+let cantidadElementos = 2
 let JuegosEliminados = juegos.splice(posicion, cantidadElementos);
 console.log({JuegosEliminados, juegos});
 
