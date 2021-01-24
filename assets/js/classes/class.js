@@ -1,4 +1,15 @@
 class Persona{
+
+    static _conteo = 0;
+    static get conteo(){
+        return Persona._conteo + ' instancias';
+    }
+
+    static mensaje(){
+        console.log(this.nombre);
+        console.log('Hola a todos, soy un método estático');
+    }
+
     //Nota 1
     nombre = '';
     codigo = '';
@@ -9,6 +20,8 @@ class Persona{
         this.nombre = nombre;
         this.codigo = codigo;
         this.frase = frase;
+
+        Persona._conteo++;
     }
 
     set setComidaFavorita(comida){
@@ -30,7 +43,7 @@ class Persona{
 }
 
 const spriderman = new Persona('Petter Parker', 'Spidy', 'Soy tu amigable vecino spiderman');
-// const ironman = new Persona('Tony Stark', 'Ironman', 'Yo soy Ironman');
+const ironman = new Persona('Tony Stark', 'Ironman', 'Yo soy Ironman');
 // console.log(ironman);
 
 spriderman.miFrase();
@@ -40,6 +53,14 @@ spriderman.setComidaFavorita = 'el pastel de Mary Jane';
 console.log(spriderman);
 console.log(spriderman.getComidaFavorita);
 
+// Persona._conteo = 2;
+console.log('Conteo estático', Persona._conteo);
+console.log(Persona.conteo);
+Persona.mensaje();
+
+Persona.propiedadExterna = 'Hola Mundo';
+console.log(Persona.propiedadExterna);
+console.log(Persona);
 
 
 /*
